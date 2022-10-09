@@ -19,10 +19,10 @@
                 <div class="login-form">
                     <form>
                         <div class="box-input-form">
-                            <input type="text" placeholder="Email hoặc số điện thoại">
+                            <input type="text" placeholder="Email hoặc số điện thoại" class="account">
                         </div>
                         <div class="box-input-form">
-                            <input type="password" placeholder="Mật khẩu">
+                            <input type="password" placeholder="Mật khẩu" class="pass">
                         </div>
                         <div class="box-submit">
                             <button type="submit">Đăng nhập</button>
@@ -34,13 +34,40 @@
                             <hr>
                         </div>
                         <div class="box-register">
-                            <a href="#" class="register">Tạo tài khoản mới</a>
+                            <a href="#show-dialog" class="register">Tạo tài khoản mới</a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        
+        <!-- dialog -->
+        <div id="show-dialog" class="dialog overlay">
+            <div class="box-dialog">
+                <div class="box-title-register">
+                    <h3>Đăng ký</h3>
+                    <p>Nhanh chóng và dễ dàng.</p>
+                    <a href="#" class="close-dialog">&times;</a>
+                </div>
+                <div class="box-form-register">
+                    <form>
+                        <div class="box-fullname">
+                            <div>
+                                <input type="text" placeholder="Họ" class="lastname">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Tên">
+                            </div>
+                        </div>
+                        <div class="box-new-acount">
+                            <input type="text" placeholder="Số di động hoặc email" id="">
+                        </div>
+                        <div class="box-new-acount">
+                            <input type="password" placeholder="Mật khẩu mới">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>

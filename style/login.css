@@ -7,6 +7,7 @@
 :root{
     --color-bg: rgb(240, 242, 245);
     --mau-chu-dao: #1877f2;
+    --mau-boder: #dadde1;
 }
 .fb-content{
     display: flex;
@@ -56,11 +57,11 @@
     border-radius: 6px;
     font-size: 17px;
 }
-input[type=text]:focus {
+input[class=account]:focus {
     border: 1px solid var(--mau-chu-dao);
     outline: none;
 }
-input[type=password]:focus {
+input[class=pass]:focus {
     border: 1px solid var(--mau-chu-dao);
     outline: none;
 }
@@ -93,7 +94,7 @@ input[type=password]:focus {
     margin: 20px 0px;
 }
 .login-form .break hr{
-    background-color: #dadde1;
+    background-color: var(--mau-boder);
     height: 1px;
     border: none;
 }
@@ -113,3 +114,75 @@ input[type=password]:focus {
     line-height: 48px;
     border-radius: 6px;
 }
+/* dialog register */
+.dialog{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.8);
+    visibility: hidden;
+}
+.dialog:target{
+    visibility: visible;
+}
+.box-dialog{
+    position: relative;
+    width: 432px;
+    height: 552px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.box-title-register{
+    height: 82px;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--mau-boder);
+}
+.box-title-register > h3{
+    font-size: 32px;
+    line-height: 38px;
+}
+.box-title-register > p{
+    color: #606770;
+    font-size: 15px;
+    line-height: 24px;
+}
+.close-dialog{
+    position:absolute;
+    top: 5px;
+    right: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 26px;
+}
+.box-form-register{
+    padding: 16px;
+    height: 470px;
+}
+.box-form-register input{
+    height: 40px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #8d949e;
+}
+.box-form-register .box-fullname{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.box-form-register .box-fullname .lastname{
+    width: 194px;
+}
+.box-form-register .box-new-acount{
+    display: flex;
+    margin-bottom: 10px;
+}
+.box-form-register .box-new-acount > input{
+    flex: 1;
+}
+
