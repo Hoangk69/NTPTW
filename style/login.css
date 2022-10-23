@@ -8,6 +8,7 @@
     --color-bg: rgb(240, 242, 245);
     --mau-chu-dao: #1877f2;
     --mau-boder: #dadde1;
+    --mau-chu-chu-form: #606770;
 }
 .fb-content{
     display: flex;
@@ -148,7 +149,7 @@ input[class=pass]:focus {
     line-height: 38px;
 }
 .box-title-register > p{
-    color: #606770;
+    color: var(--mau-chu-chu-form);
     font-size: 15px;
     line-height: 24px;
 }
@@ -168,14 +169,14 @@ input[class=pass]:focus {
     height: 40px;
     padding: 12px;
     border-radius: 6px;
-    border: 1px solid #8d949e;
+    border: 1px solid var(--mau-boder);
 }
 .box-form-register .box-fullname{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.box-form-register .box-fullname .lastname{
+.box-form-register .box-fullname input{
     width: 194px;
 }
 .box-form-register .box-new-acount{
@@ -186,3 +187,58 @@ input[class=pass]:focus {
     flex: 1;
 }
 
+.box-form-register .box-lable{
+    font-size: 12px;
+    color: var(--mau-chu-chu-form);
+}
+
+.box-form-register .box-birthday{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.box-form-register .box-birthday select{
+    height: 36px;
+    width: 125px;
+    border-radius: 6px;
+    border: 1px solid var(--mau-boder);
+    padding: 8px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.box-form-register .box-gender{
+    display: flex;
+    justify-content: space-between;
+}
+.box-form-register .box-gender > div{
+    position: relative;
+    border: 1px solid var(--mau-boder);
+    border-radius: 6px;
+    height: 36px;
+    width: 125px;
+}
+.box-form-register .box-gender label{
+    font-size: 15px;
+    width: 100%;
+    line-height: 36px;
+    padding: 0 28px 0 10px;
+    display: inline-block;
+}
+.box-form-register .box-gender input{
+    height: 36px;
+    position: absolute;
+    right: 10px;
+
+}
+.box-form-register form > p{
+    font-size: 11px;
+    color: var(--mau-chu-chu-form);
+}
+.box-form-register .info-fb{
+    margin: 10px 0;
+}
+.box-form-register .info-fb a{
+    text-decoration: none;
+}
