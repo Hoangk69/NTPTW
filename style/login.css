@@ -134,7 +134,6 @@ input[class=pass]:focus {
 .box-dialog{
     position: relative;
     width: 432px;
-    height: 552px;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
@@ -163,7 +162,6 @@ input[class=pass]:focus {
 }
 .box-form-register{
     padding: 16px;
-    height: 470px;
 }
 .box-form-register input{
     height: 40px;
@@ -241,4 +239,23 @@ input[class=pass]:focus {
 }
 .box-form-register .info-fb a{
     text-decoration: none;
+}
+.box-btn-register{
+    text-align: center;
+}
+.box-btn-register .btn-register{
+    background-color: #00a400;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    margin: 10px 0px;
+    border: none;
+    height: 36px;
+    width: 194px;
+    padding: 0px 32px;
+    font-weight: bold;
+}
+.box-btn-register .btn-register:hover{
+    cursor: pointer;
+    background: linear-gradient(#79bc64, #578843);
 }
