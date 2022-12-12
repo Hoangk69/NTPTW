@@ -11,16 +11,23 @@
     --mau-chu-chu-form: #606770;
 }
 .fb-content{
+    /* position: relative; */
     display: flex;
-    height: 720px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: var(--color-bg);
 }
 .fb-content .content-center{
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     display: flex;
     width: 980px;
     height: 496px;
     padding: 20px 0px;
-    margin: auto;
+    /* margin: auto; */
 }
 .title{
     width: 580px;
@@ -67,11 +74,11 @@ input[class=pass]:focus {
     outline: none;
 }
 
-.login-form .box-submit{
+.login-form .box-btn-login{
     padding-top: 6px;
     text-align: center;
 }
-.login-form .box-submit button{
+.login-form .box-btn-login .btn-login{
     background-color: var(--mau-chu-dao);
     color: #ffff;
     width: 100%;
@@ -80,6 +87,10 @@ input[class=pass]:focus {
     border: none;
     border-radius: 6px;
     font-weight: bold;
+}
+.login-form .box-btn-login .btn-login:hover{
+    background-color: #166fe5;
+    cursor: pointer;
 }
 .login-form .box-forget-pass{
     margin-top: 16px;
@@ -115,7 +126,9 @@ input[class=pass]:focus {
     line-height: 48px;
     border-radius: 6px;
 }
+
 /* dialog register */
+
 .dialog{
     position: fixed;
     top: 0;
@@ -259,3 +272,4 @@ input[class=pass]:focus {
     cursor: pointer;
     background: linear-gradient(#79bc64, #578843);
 }
+/* end dialog register */
