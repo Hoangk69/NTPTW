@@ -5,6 +5,14 @@ const menuMessenger = document.getElementById('nav-messenger');
 const btnMessenger = document.getElementById('messenger');
 
 const iconMessenger = document.querySelector('.fa-facebook-messenger');
+
+
+//check login use localStorage
+if(localStorage.length<=0){
+    window.location.assign("../login.html")
+}
+
+
 /* 
 *  handle event Headers
 */
@@ -20,8 +28,9 @@ function myAccount(){
 
 // close click outside
 document.onclick = function(e){
-    if (e.target.id != 'my-account' && e.target.id != 'avt-account' && !$(e.target).parents('#nav-account').length) {
+    if (e.target.id != 'my-account' && e.target.id != 'avt-account') {
         console.log('vao day 1');
+        //!$(e.target).parents('#nav-account').length
         // console.log(btnAccount);
         console.log(e.target.id);
         menuAccount.style.display = 'none';
@@ -41,3 +50,4 @@ function myMessenger(){
     iconMessenger.classList.toggle('click-color-icon-messsenger');
     btnMessenger.classList.toggle('click-background-btn-messenger');
 }
+

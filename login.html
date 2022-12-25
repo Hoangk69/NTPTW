@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icon.webp">
+    <link rel="stylesheet" href="./style/login.css">
+    <title>Facebook - Đăng nhập hoặc đăng kí</title>
+</head>
+<body>
+    <main>
+        <div class="fb-content">
+            <div class="content-center">
+                <div class="title">
+                    <img src="./img/facebookBlue.svg" alt="Facebook">
+                    <h2>Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn.</h2>
+                </div>
+                <div class="login-form">
+                    <form onsubmit="submitLogin()">
+                        <div class="box-input-form">
+                            <input type="text" placeholder="Email hoặc số điện thoại" class="account" id="login-user" required>
+                        </div>
+                        <div class="box-input-form">
+                            <input type="password" placeholder="Mật khẩu" class="pass" id="login-pass" required>
+                        </div>
+                        <div class="box-btn-login">
+                            <button class="btn-login" type="submit" >Đăng nhập</button>
+                        </div>
+                        <div class="box-forget-pass">
+                            <a href="#" class="forget-pass">Quên mật khẩu ?</a>
+                        </div>
+                        <div class="break">
+                            <hr>
+                        </div>
+                        <div class="box-register">
+                            <a href="#show-dialog" class="register">Tạo tài khoản mới</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- dialog -->
+        <div id="show-dialog" class="dialog">
+            <div class="box-dialog">
+                <div class="box-title-register">
+                    <h3>Đăng ký</h3>
+                    <p>Nhanh chóng và dễ dàng.</p>
+                    <a href="#" class="close-dialog">&times;</a>
+                </div>
+                <div class="box-form-register">
+                    <form onsubmit="submitRegister()">
+                        <div class="box-fullname">
+                            <div>
+                                <input type="text" placeholder="Họ" class="lastname" required>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Tên" required>
+                            </div>
+                        </div>
+                        <div class="box-new-acount">
+                            <input type="text" placeholder="Số di động hoặc email" id="user" required>
+                        </div>
+                        <div class="box-new-acount">
+                            <input type="password" placeholder="Mật khẩu mới" id="password" required>
+                        </div>
+                        <div class="box-lable">Ngày sinh</div>
+                        <div class="box-birthday">
+                            <div>
+                                <select class="day">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select class="month">
+                                    <option >Tháng 1</option>
+                                    <option >Tháng 2</option>
+                                    <option >Tháng 3</option>
+                                    <option >Tháng 4</option>
+                                    <option >Tháng 5</option>
+                                    <option >Tháng 6</option>
+                                    <option >Tháng 7</option>
+                                    <option >Tháng 8</option>
+                                    <option >Tháng 9</option>
+                                    <option >Tháng 10</option>
+                                    <option >Tháng 11</option>
+                                    <option >Tháng 12</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select class="year">
+                                    <option>2010</option>
+                                    <option>2009</option>
+                                    <option>2008</option>
+                                    <option>2007</option>
+                                    <option>2006</option>
+                                    <option>2005</option>
+                                    <option>2004</option>
+                                    <option>2003</option>
+                                    <option>2002</option>
+                                    <option>2001</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-lable">Giới tính</div>
+                        <div class="box-gender">
+                            <div>
+                                <label for="female">Nữ</label>
+                                <input type="radio" name="gender" id="female">
+                            </div>
+                            <div>
+                                <label for="male">Nam</label>
+                                <input type="radio" name="gender" id="male">
+                            </div>
+                            <div>
+                                <label for="other">Khác</label>
+                                <input type="radio" name="gender" id="other" checked>
+                            </div>
+                        </div>
+                        <p class="info-fb">Người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của bạn lên Facebook. <a href="#show-dialog">Tìm hiểu thêm.</a></p>
+                        <p>Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản, Chính sách quyền riêng tư và Chính sách cookie của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.</p>
+                        <div class="box-btn-register">
+                            <button type="submit" class="btn-register">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end dialog -->
+    </main>
+    <script src="./js/validate.js"></script>
+</body>
+</html>
