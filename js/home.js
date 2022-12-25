@@ -9,7 +9,7 @@ const iconMessenger = document.querySelector('.fa-facebook-messenger');
 
 //check login use localStorage
 if(localStorage.length<=0){
-    window.location.assign("../login.html")
+    window.location.assign("./login.html");
 }
 
 
